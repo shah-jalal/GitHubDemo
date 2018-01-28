@@ -13,10 +13,14 @@ public class GoogleSearchTest {
 		// Create ChromeDrive instance
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
-		String title = driver.getTitle();
-		System.out.println(title);
 		
-		driver.findElement(By.name("q")).sendKeys("What is github");
+		//Need to add input search text verification
+		
+		
+		//Need to add separate file for title verification
+		
+		
+		
 	}
 
 }
