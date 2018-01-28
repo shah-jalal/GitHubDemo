@@ -1,21 +1,19 @@
 package googleSearch;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class GoogleSearchTest {
+public class GoogleTitle {
 
 	public static void main(String[] args) {
-		// TODO Google Search Test
-
+		// TODO Auto-generated method stub
+		
 		System.setProperty("webdriver.chrome.driver", "/Users/apple/Downloads/Browser_driver/chromedriver");
 		// Create ChromeDrive instance
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
-		driver.findElement(By.name("q")).sendKeys("What is github");
-		
-		//some changes done
+		String title = driver.getTitle();
+		System.out.println("Page title: " + title);
 	}
 
 }
