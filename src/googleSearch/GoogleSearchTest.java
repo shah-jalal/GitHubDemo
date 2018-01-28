@@ -19,22 +19,18 @@ public class GoogleSearchTest {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		driver.get("https://www.google.com/");
-		WebElement element = driver.findElement(By.name("q"));
-		element.sendKeys("GitHub");
-		String searchText = element.getAttribute("value");
-		System.out.println(searchText);
+
 		
-		//Search input verification
-		if(searchText.equals("GitHub")) {
-			System.out.println("Pass");
-		}else {
-			System.out.println("Fail");
-		}
-		
-		driver.quit();
+		//Need to add input search text verification
 		
 		
+		//Need to add separate file for title verification
 		
+
+		driver.findElement(By.name("q")).sendKeys("What is github");
+		
+		//some changes done
+
 	}
 
 }
