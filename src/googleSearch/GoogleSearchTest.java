@@ -24,6 +24,7 @@ public class GoogleSearchTest {
 		String searchText = element.getAttribute("value");
 		System.out.println(searchText);
 		
+		//Search input verification
 		if(searchText.equals("GitHub")) {
 			System.out.println("Pass");
 		}else {
